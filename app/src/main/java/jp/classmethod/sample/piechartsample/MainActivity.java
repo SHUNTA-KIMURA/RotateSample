@@ -15,14 +15,11 @@ import com.github.mikephil.charting.formatter.PercentFormatter;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     PieChart mPieChart;
-    float fromAngle = 0.0f;
-    float toAngle = 1.0f;
     int  count = 12;
 
     @Override
@@ -72,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
     public void stop(View v){
         mPieChart.spin(5000, mPieChart.getRotationAngle(), mPieChart.getRotationAngle() + 1800, Easing.EasingOption. EaseOutQuart);
     }
-
 
 
 }
